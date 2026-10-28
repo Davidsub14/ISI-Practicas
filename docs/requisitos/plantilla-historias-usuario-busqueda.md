@@ -3,8 +3,8 @@
 | Campo | Valor |
 | --- | --- |
 | Proyecto | Proyecto Simbiosis |
-| Fecha | [dd/mm/aaaa] |
-| Versión | [Versión de trabajo] |
+| Fecha | 28/10/26 |
+| Versión | 5.0 |
 | Estado | Borrador |
 
 ## Fuentes comunes
@@ -15,7 +15,7 @@
 
 ## Épica de búsqueda
 
-Como [rol], quiero [capacidad amplia], para [beneficio].
+Como usuario registrado, quiero buscar recetas a partir de criterios seleccionados, ordenar los resultados y acceder a los detalles de una receta, para obtener una receta adecuada a mí.
 
 **Estado:** descompuesta en US-01, US-02 y US-03. Conserva la necesidad conjunta.
 
@@ -25,29 +25,29 @@ Como [rol], quiero [capacidad amplia], para [beneficio].
 
 ## US-01
 
-**Título:** [Capacidad]
+**Introducir criterios** 
 
-Como [rol], quiero [capacidad], para [beneficio].
+Como usuario registrado, quiero buscar recetas a partir de una serie de criterios seleccionados, para obtener una receta adecuada.
 
 **Fuentes:** UR-08; UC-21; [FR principal]; acta, [apartado pertinente].
 
 ### Criterios de aceptación
 
-- **CA-01.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-02.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-03.** Dado [situación], cuando [acción], entonces [resultado observable].
+- **CA-01.** Dado que el usuario registrado ha introducido una serie de criterios de búsqueda, cuando intenta realizar la búsqueda de recetas, entonces el sistema muestra todas las recetas publicadas que se adapten a los criterios de búsqueda.
+- **CA-02.** Dado que el usuario registrado ha introducido un ingrediente que desea encontrar, cuando añade el mismo ingrediente para excluirlo e intenta buscar recetas, entonces el sistema avisa del conflicto y no realiza la búsqueda.
+- **CA-03.** Dado que el usuario registrado ha introducido una serie de criterios, cuando intenta realizar la búsqueda de recetas y no existe ninguna receta que se adapte a los criterios, entonces el sistema indica la ausencia de resultados, conserva los criterios y le presenta al usuario registrado recetas alternativas cuando las haya.
 
 ## US-02
 
-**Título:** [Capacidad]
+**Ordenar resultados**
 
-Como [rol], quiero [capacidad], para [beneficio].
+Como usuario registrado, quiero ordenar los resultados por fecha de subida, para obtener las recetas más recientes.
 
-**Fuentes:** UR-08; UC-21; [FR principal]; acta, [apartado pertinente].
+**Fuentes:** UR-08; UC-21; FR-009; acta, [apartado pertinente].
 
 ### Criterios de aceptación
 
-- **CA-01.** Dado [situación], cuando [acción], entonces [resultado observable].
+- **CA-01.** Dado que el usuario registrado ha realizado una búsqueda, cuando ordena los resultados por fecha de subida, entonces obtiene una lista de recetas ordenadas desde la más reciente a la más antigua.
 - **CA-02.** Dado [situación], cuando [acción], entonces [resultado observable].
 - **CA-03.** Dado [situación], cuando [acción], entonces [resultado observable].
 
